@@ -1,0 +1,56 @@
+{
+  "profile": {
+    "name": "Your Name",
+    "role": "Full Stack Developer",
+    "location": "Your City, Country",
+    "tagline": "I build delightful digital experiences with clean code and modern UI.",
+    "about": "I am a passionate developer who loves building high-performance web applications. I focus on user-centric design, scalable backend systems, and smooth animations.",
+    "resumeLink": "https://example.com/resume.pdf"
+  },
+  "skills": [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "React",
+    "Bootstrap",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "REST APIs",
+    "Git & GitHub"
+  ],
+  "projects": [
+    {
+      "title": "E-Commerce Platform",
+      "description": "Built a scalable e-commerce app with product filtering, secure checkout, and admin analytics.",
+      "techStack": ["React", "Node.js", "MongoDB", "Bootstrap"],
+      "liveDemo": "https://example.com/ecommerce",
+      "sourceCode": "https://github.com/yourusername/ecommerce-platform"
+    },
+    {
+      "title": "AI Resume Analyzer",
+      "description": "Created an AI-powered app that scores resumes and suggests improvements using NLP.",
+      "techStack": ["React", "Express", "OpenAI API", "PostgreSQL"],
+      "liveDemo": "https://example.com/resume-analyzer",
+      "sourceCode": "https://github.com/yourusername/ai-resume-analyzer"
+    },
+    {
+      "title": "Task Management Dashboard",
+      "description": "Developed a productivity dashboard with real-time task updates, reminders, and progress charts.",
+      "techStack": ["React", "Node.js", "Socket.IO", "Bootstrap"],
+      "liveDemo": "https://example.com/task-dashboard",
+      "sourceCode": "https://github.com/yourusername/task-dashboard"
+    }
+  ],
+  "achievements": [
+    "Solved 500+ coding problems across platforms.",
+    "Completed 150+ DSA questions on LeetCode.",
+    "Open-source contributor with multiple merged pull requests."
+  ],
+  "profiles": {
+    "github": "https://github.com/yourusername",
+    "leetcode": "https://leetcode.com/yourusername",
+    "linkedin": "https://www.linkedin.com/in/yourusername/",
+    "email": "mailto:youremail@example.com"
+  }
+}
