@@ -1,0 +1,120 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #101b3f 0%, #070b1d 40%, #04050f 100%);
+  min-height: 100vh;
+}
+
+.app-bg {
+  min-height: 100vh;
+}
+
+.hero-panel,
+.glass-panel,
+.project-card {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.2rem;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+.hero-panel {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-panel::after {
+  content: '';
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, rgba(13, 202, 240, 0.4), transparent 70%);
+  top: -80px;
+  right: -80px;
+  animation: float 5s ease-in-out infinite;
+}
+
+.skill-pill {
+  background: rgba(13, 202, 240, 0.2);
+  border: 1px solid rgba(13, 202, 240, 0.45);
+  color: #b8f5ff;
+  padding: 0.55rem 1rem;
+  font-size: 0.9rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 45px rgba(13, 202, 240, 0.2);
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(22px);
+  animation: fadeUp 0.7s ease forwards;
+}
+
+.type-role {
+  min-height: 2.5rem;
+  border-right: 2px solid #0dcaf0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: caretBlink 0.8s step-end infinite;
+}
+
+.loading-screen {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  color: #d8e9ff;
+}
+
+.pulse {
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+.tracking {
+  letter-spacing: 0.12rem;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(18px);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes caretBlink {
+  50% {
+    border-color: transparent;
+  }
+}
